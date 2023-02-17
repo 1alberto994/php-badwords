@@ -3,12 +3,15 @@
 $title='BADWORDS';
 $text='Hai rotto il cazzo';
 
+$censurato= str_replace('cazzo','***',$text)
+
+
 ?>
 
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +25,12 @@ $text='Hai rotto il cazzo';
     </p>
     <p>
         la lunghezza del mio  testo è di : <?php echo strlen($text)?> lettere
+    </p>
+    <p>
+     parola censurata è:<?php echo $censurato?>
+    </p>
+    <p>
+        la lunghezza della mia parola censurata è di: <?php echo strlen($censurato)?> lettere
     </p>
 </body>
 </html>
